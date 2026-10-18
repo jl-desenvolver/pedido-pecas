@@ -1,5 +1,0 @@
-Pedido de Pecas Embritech (PWA)
-
-Para usar: envie TODOS os arquivos desta pasta para um site (Netlify Drop, GitHub Pages ou servidor da empresa).
-O endereco precisa ser HTTPS. Abra o endereco no celular/Chrome e use "Instalar app" / "Adicionar a tela inicial".
-Os dados (clientes, pedidos) ficam salvos no navegador de cada pessoa.
