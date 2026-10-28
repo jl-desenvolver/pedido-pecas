@@ -1,5 +1,12 @@
-Pedido de Pecas Embritech (PWA)
+PEDIDO DE PECAS EMBRITECH - versao com login (Supabase)
 
-Para usar: envie TODOS os arquivos desta pasta para um site (Netlify Drop, GitHub Pages ou servidor da empresa).
-O endereco precisa ser HTTPS. Abra o endereco no celular/Chrome e use "Instalar app" / "Adicionar a tela inicial".
-Os dados (clientes, pedidos) ficam salvos no navegador de cada pessoa.
+1) Supabase: crie um projeto gratuito (supabase.com). Authentication > Providers > Email:
+   deixe ativado e DESLIGUE "Allow new users to sign up" (so voce cria os usuarios).
+2) SQL Editor: cole o conteudo de supabase-setup.sql e clique em Run.
+3) Authentication > Users > Add user: crie o seu usuario (e-mail e senha, marque "Auto Confirm").
+4) SQL Editor: rode  update public.profiles set papel='admin' where email='SEU@EMAIL.COM';
+5) Project Settings > API: copie "Project URL" e a chave "anon public".
+   Abra config.js e cole nos lugares indicados. NUNCA use a chave service_role.
+6) Envie TODOS os arquivos desta pasta para o GitHub Pages (substituindo os antigos).
+7) Abra o endereco, entre com seu e-mail e senha. Na aba "Usuarios" voce define o papel
+   (Administrador, Almoxarifado, Tecnico) de cada pessoa criada no passo 3.
