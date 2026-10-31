@@ -5,15 +5,17 @@ PEDIDO DE PECAS EMBRITECH - versao com login (Supabase)
 2) SQL Editor: cole o conteudo de supabase-setup.sql e clique em Run.
 3) Authentication > Users > Add user: crie o seu usuario (e-mail e senha, marque "Auto Confirm").
 4) SQL Editor: rode  update public.profiles set papel='admin' where email='SEU@EMAIL.COM';
-5) Project Settings > API: copie "Project URL" e a chave "anon public".
-   Abra config.js e cole nos lugares indicados. NUNCA use a chave service_role.
+5) Project URL: botao "Connect" no topo do painel (ou Project Settings > Data API).
+   Chave: Project Settings > API Keys > "Publishable key" (sb_publishable_...). Se aparecer so a aba
+   "Legacy API keys", use a chave "anon". Abra config.js e cole nos lugares indicados.
+   NUNCA use a chave "secret" nem "service_role".
 6) Envie TODOS os arquivos desta pasta para o GitHub Pages (substituindo os antigos).
 7) Abra o endereco, entre com seu e-mail e senha. Na aba "Usuarios" voce define o papel
    (Administrador, Almoxarifado, Tecnico) de cada pessoa criada no passo 3.
 
 SE A TELA DE LOGIN NAO APARECER
-- Procure o aviso amarelo no topo ("Modo local, sem login: ...") e a "versao" (deve ser login-v8).
-- Se nao aparece "login-v8", o navegador esta mostrando a copia antiga guardada. Recarregue 2 vezes,
+- Procure o aviso amarelo no topo ("Modo local, sem login: ...") e a "versao" (deve ser login-v9).
+- Se nao aparece "login-v9", o navegador esta mostrando a copia antiga guardada. Recarregue 2 vezes,
   ou abra em janela anonima, ou limpe os dados do site (Chrome: cadeado > Configuracoes do site > Limpar dados).
 - Aviso "config.js ainda nao tem a URL e a chave": preencha o config.js e envie de novo ao GitHub.
 - Aviso "biblioteca do Supabase nao carregou": verifique a internet/bloqueios (jsdelivr.net e unpkg.com).
