@@ -10,3 +10,10 @@ PEDIDO DE PECAS EMBRITECH - versao com login (Supabase)
 6) Envie TODOS os arquivos desta pasta para o GitHub Pages (substituindo os antigos).
 7) Abra o endereco, entre com seu e-mail e senha. Na aba "Usuarios" voce define o papel
    (Administrador, Almoxarifado, Tecnico) de cada pessoa criada no passo 3.
+
+SE A TELA DE LOGIN NAO APARECER
+- Procure o aviso amarelo no topo ("Modo local, sem login: ...") e a "versao" (deve ser login-v8).
+- Se nao aparece "login-v8", o navegador esta mostrando a copia antiga guardada. Recarregue 2 vezes,
+  ou abra em janela anonima, ou limpe os dados do site (Chrome: cadeado > Configuracoes do site > Limpar dados).
+- Aviso "config.js ainda nao tem a URL e a chave": preencha o config.js e envie de novo ao GitHub.
+- Aviso "biblioteca do Supabase nao carregou": verifique a internet/bloqueios (jsdelivr.net e unpkg.com).
